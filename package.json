@@ -1,0 +1,14 @@
+{
+  "name": "aws-cicd-backend",
+  "version": "1.0.0",
+  "description": "Simple Node.js backend for AWS CodePipeline, CodeBuild and CodeDeploy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --check server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
