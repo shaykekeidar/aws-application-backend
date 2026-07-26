@@ -6,7 +6,7 @@ const packageInfo = require("./package.json");
 
 const app = express();
 
-const port = Number(process.env.PORT) || 3000;
+const port = Number(process.env.PORT) || 12008;
 const applicationVersion =
   process.env.APP_VERSION || packageInfo.version || "unknown";
 
