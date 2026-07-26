@@ -46,7 +46,7 @@ app.get("/api/status", (req, res) => {
 
 app.get("/api/hello", (req, res) => {
   res.json({
-    message: "Hello from the Node.js application running on EC2",
+    message: "Hello from version 2 deployed by AWS CodePipeline on EC2",
   });
 });
 
