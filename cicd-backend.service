@@ -11,7 +11,7 @@ Group=ec2-user
 WorkingDirectory=/opt/aws-cicd-backend
 
 Environment=NODE_ENV=production
-Environment=PORT=3000
+Environment=PORT=12008
 
 ExecStart=/usr/bin/node /opt/aws-cicd-backend/server.js
 

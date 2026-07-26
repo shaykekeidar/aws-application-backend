@@ -2,7 +2,7 @@
 
 set -e
 
-HEALTH_URL="http://localhost:3000/api/status"
+HEALTH_URL="http://localhost:12008/api/status"
 MAX_ATTEMPTS=12
 SLEEP_SECONDS=5
 
