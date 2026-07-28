@@ -23,7 +23,7 @@ resource "aws_ecs_service" "backend" {
     container_name   = "backend"
     container_port   = var.container_port
   }
-  
+
   lifecycle {
     ignore_changes = [
       task_definition
