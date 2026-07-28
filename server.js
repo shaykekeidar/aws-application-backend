@@ -46,7 +46,7 @@ app.get("/api/status", (req, res) => {
 
 app.get("/api/hello", (req, res) => {
   res.json({
-    message: "Hello from version 2 deployed by AWS github actions on ECS",
+    message: "Hello from GitHub Actions on Amazon ECS Fargate",
   });
 });
 
