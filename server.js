@@ -6,7 +6,7 @@ const packageInfo = require("./package.json");
 
 const app = express();
 
-const port = Number(process.env.PORT) || 12008;
+const PORT = process.env.PORT || 12008;
 const applicationVersion =
   process.env.APP_VERSION || packageInfo.version || "unknown";
 
@@ -84,8 +84,8 @@ app.use((error, req, res, next) => {
   });
 });
 
-const server = app.listen(port, "0.0.0.0", () => {
-  console.log(`Backend listening on port ${port}`);
+const server = app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Backend listening on port ${PORT}`);
 });
 
 /*
