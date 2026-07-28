@@ -1,9 +1,11 @@
 name: Deploy Backend to ECS
 
-on:
+"on":
   push:
     branches:
       - feature/ecs-terraform-github-actions
+
+  workflow_dispatch:
 
 permissions:
   contents: read
