@@ -7,6 +7,10 @@ name: Deploy Backend to ECS
 
   workflow_dispatch:
 
+concurrency:
+  group: backend-deployment-${{ github.ref }}
+  cancel-in-progress: true
+  
 permissions:
   contents: read
   id-token: write
