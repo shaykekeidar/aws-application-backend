@@ -84,3 +84,20 @@ variable "owner" {
   type        = string
   default     = "Shayke"
 }
+variable "backend_image_tag" {
+  description = "Container image tag deployed by the ECS task definition."
+  type        = string
+  default     = "latest"
+}
+
+variable "task_cpu" {
+  description = "CPU units allocated to each Fargate task."
+  type        = number
+  default     = 256
+}
+
+variable "task_memory" {
+  description = "Memory in MiB allocated to each Fargate task."
+  type        = number
+  default     = 512
+}
