@@ -101,3 +101,21 @@ variable "task_memory" {
   type        = number
   default     = 512
 }
+
+variable "github_repository_owner" {
+  description = "GitHub account or organization that owns the backend repository."
+  type        = string
+  default     = "shaykekeidar"
+}
+
+variable "github_repository_name" {
+  description = "GitHub backend repository name."
+  type        = string
+  default     = "aws-application-backend"
+}
+
+variable "github_deployment_branch" {
+  description = "GitHub branch allowed to deploy the backend."
+  type        = string
+  default     = "feature/ecs-terraform-github-actions"
+}

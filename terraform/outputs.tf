@@ -105,3 +105,8 @@ output "ecs_cluster_arn" {
   description = "ARN of the ECS cluster."
   value       = aws_ecs_cluster.main.arn
 }
+
+output "github_actions_backend_role_arn" {
+  description = "IAM role assumed by the backend GitHub Actions workflow."
+  value       = aws_iam_role.github_actions_backend.arn
+}

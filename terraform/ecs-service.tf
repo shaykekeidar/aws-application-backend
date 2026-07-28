@@ -23,6 +23,12 @@ resource "aws_ecs_service" "backend" {
     container_name   = "backend"
     container_port   = var.container_port
   }
+  
+  lifecycle {
+    ignore_changes = [
+      task_definition
+    ]
+  }
 
   health_check_grace_period_seconds = 60
 
@@ -40,4 +46,5 @@ resource "aws_ecs_service" "backend" {
   tags = {
     Name = "${local.name_prefix}-backend-service"
   }
+
 }
