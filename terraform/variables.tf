@@ -119,3 +119,15 @@ variable "github_deployment_branch" {
   type        = string
   default     = "feature/ecs-terraform-github-actions"
 }
+
+variable "github_repository_owner_id" {
+  description = "Immutable GitHub account ID."
+  type        = string
+  default     = "46778647"
+}
+
+variable "github_repository_id" {
+  description = "Immutable GitHub repository ID."
+  type        = string
+  default     = "1312580497"
+}
