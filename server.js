@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
       "/api/status",
       "/api/hello",
       "/api/time",
-      "/api/version",
+      "/api/info",
     ],
   });
 });
@@ -56,10 +56,13 @@ app.get("/api/time", (req, res) => {
   });
 });
 
-app.get("/api/version", (req, res) => {
+app.get("/api/info", (req, res) => {
   res.json({
     application: "aws-cicd-backend",
-    version: applicationVersion,
+    version: "1.0.0",
+    imageTag: process.env.BUILD_VERSION || "unknown",
+    environment: process.env.NODE_ENV || "unknown",
+    container: process.env.HOSTNAME || "unknown",
   });
 });
 
