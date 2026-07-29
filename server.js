@@ -56,6 +56,7 @@ app.get("/api/time", (req, res) => {
   });
 });
 
+
 app.get("/api/info", (req, res) => {
   res.json({
     application: "aws-cicd-backend",
