@@ -3,7 +3,7 @@ name: Deploy Backend to ECS
 "on":
   push:
     branches:
-      - feature/ecs-terraform-github-actions
+      - feature/ecs-terraform-github-actions-eu-west-1
 
   workflow_dispatch:
 
