@@ -22,7 +22,7 @@ env:
   ECS_SERVICE: aws-application-dev-backend-service
   ECS_TASK_DEFINITION_FAMILY: aws-application-dev-backend
   CONTAINER_NAME: backend
-  AWS_ROLE_ARN: arn:aws:iam::057461015409:role/aws-application-dev-github-actions-backend-role
+  AWS_ROLE_ARN: arn:aws:iam::858208763445:role/aws-application-dev-github-actions-backend-role
 
 jobs:
   deploy:
