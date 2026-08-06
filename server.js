@@ -46,7 +46,7 @@ app.get("/api/status", (req, res) => {
 
 app.get("/api/hello", (req, res) => {
   res.json({
-    message: "Hello cloud-modules.",
+    message: "Hello cloud-modules -- v2.",
   });
 });
 
